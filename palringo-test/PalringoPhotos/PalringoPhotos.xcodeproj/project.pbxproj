@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		075F3AC41DB0FFE100831312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F3AC31DB0FFE100831312 /* main.m */; };
+		075F3AC71DB0FFE100831312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F3AC61DB0FFE100831312 /* AppDelegate.m */; };
+		075F3ACD1DB0FFE100831312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F3ACB1DB0FFE100831312 /* Main.storyboard */; };
+		075F3ACF1DB0FFE100831312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 075F3ACE1DB0FFE100831312 /* Assets.xcassets */; };
+		075F3AD21DB0FFE100831312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 075F3AD01DB0FFE100831312 /* LaunchScreen.storyboard */; };
+		075F3ADD1DB0FFE100831312 /* PalringoPhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F3ADC1DB0FFE100831312 /* PalringoPhotosTests.m */; };
+		075F3AE81DB0FFE100831312 /* PalringoPhotosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 075F3AE71DB0FFE100831312 /* PalringoPhotosUITests.m */; };
+		075F3AF71DB1001D00831312 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F3AF61DB1001D00831312 /* PhotoCollectionViewController.swift */; };
+		075F3AFB1DB128A400831312 /* FlickrFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075F3AFA1DB128A400831312 /* FlickrFetcher.swift */; };
+		07F2581D1DB3B5400077EACA /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2581C1DB3B5400077EACA /* Photo.swift */; };
+		07F2581F1DB3B66A0077EACA /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F2581E1DB3B66A0077EACA /* PhotoCell.swift */; };
+		07F258211DB3BA8F0077EACA /* PhotoComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F258201DB3BA8F0077EACA /* PhotoComment.swift */; };
+		6A19101E24F51CD4009DB969 /* SelectPhotographerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A19101D24F51CD4009DB969 /* SelectPhotographerViewController.swift */; };
+		6A19102124F54277009DB969 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A19102024F54277009DB969 /* CommentsViewController.swift */; };
+		B5586B511DB153B800E82C9B /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5586B501DB153B800E82C9B /* GradientView.swift */; };
+		B59C06221DB16D3500425848 /* CachedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59C06211DB16D3500425848 /* CachedRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		075F3AD91DB0FFE100831312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 075F3AB71DB0FFE100831312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 075F3ABE1DB0FFE100831312;
+			remoteInfo = PalringoPhotos;
+		};
+		075F3AE41DB0FFE100831312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 075F3AB71DB0FFE100831312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 075F3ABE1DB0FFE100831312;
+			remoteInfo = PalringoPhotos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		075B95281DB4B9B400DAFA2F /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		075F3ABF1DB0FFE100831312 /* PalringoPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PalringoPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		075F3AC31DB0FFE100831312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		075F3AC51DB0FFE100831312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		075F3AC61DB0FFE100831312 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		075F3ACC1DB0FFE100831312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		075F3ACE1DB0FFE100831312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		075F3AD11DB0FFE100831312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		075F3AD31DB0FFE100831312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		075F3AD81DB0FFE100831312 /* PalringoPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalringoPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		075F3ADC1DB0FFE100831312 /* PalringoPhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PalringoPhotosTests.m; sourceTree = "<group>"; };
+		075F3ADE1DB0FFE100831312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		075F3AE31DB0FFE100831312 /* PalringoPhotosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalringoPhotosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		075F3AE71DB0FFE100831312 /* PalringoPhotosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PalringoPhotosUITests.m; sourceTree = "<group>"; };
+		075F3AE91DB0FFE100831312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		075F3AF51DB1001D00831312 /* PalringoPhotos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PalringoPhotos-Bridging-Header.h"; sourceTree = "<group>"; };
+		075F3AF61DB1001D00831312 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		075F3AFA1DB128A400831312 /* FlickrFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrFetcher.swift; sourceTree = "<group>"; };
+		07F2581C1DB3B5400077EACA /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		07F2581E1DB3B66A0077EACA /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		07F258201DB3BA8F0077EACA /* PhotoComment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoComment.swift; sourceTree = "<group>"; };
+		6A19101D24F51CD4009DB969 /* SelectPhotographerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotographerViewController.swift; sourceTree = "<group>"; };
+		6A19102024F54277009DB969 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		B5586B501DB153B800E82C9B /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		B59C06211DB16D3500425848 /* CachedRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		075F3ABC1DB0FFE100831312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		075F3AD51DB0FFE100831312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		075F3AE01DB0FFE100831312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		075F3AB61DB0FFE100831312 = {
+			isa = PBXGroup;
+			children = (
+				075B95281DB4B9B400DAFA2F /* ReadMe.rtf */,
+				075F3AC11DB0FFE100831312 /* PalringoPhotos */,
+				075F3ADB1DB0FFE100831312 /* PalringoPhotosTests */,
+				075F3AE61DB0FFE100831312 /* PalringoPhotosUITests */,
+				075F3AC01DB0FFE100831312 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		075F3AC01DB0FFE100831312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				075F3ABF1DB0FFE100831312 /* PalringoPhotos.app */,
+				075F3AD81DB0FFE100831312 /* PalringoPhotosTests.xctest */,
+				075F3AE31DB0FFE100831312 /* PalringoPhotosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		075F3AC11DB0FFE100831312 /* PalringoPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				075F3AC51DB0FFE100831312 /* AppDelegate.h */,
+				075F3AC61DB0FFE100831312 /* AppDelegate.m */,
+				075F3ACB1DB0FFE100831312 /* Main.storyboard */,
+				6A19101F24F52AE9009DB969 /* View Controllers */,
+				075F3AFA1DB128A400831312 /* FlickrFetcher.swift */,
+				B59C06211DB16D3500425848 /* CachedRequest.swift */,
+				07F2581C1DB3B5400077EACA /* Photo.swift */,
+				07F258201DB3BA8F0077EACA /* PhotoComment.swift */,
+				07F2581E1DB3B66A0077EACA /* PhotoCell.swift */,
+				B5586B501DB153B800E82C9B /* GradientView.swift */,
+				075F3ACE1DB0FFE100831312 /* Assets.xcassets */,
+				075F3AD01DB0FFE100831312 /* LaunchScreen.storyboard */,
+				075F3AD31DB0FFE100831312 /* Info.plist */,
+				075F3AC21DB0FFE100831312 /* Supporting Files */,
+				075F3AF51DB1001D00831312 /* PalringoPhotos-Bridging-Header.h */,
+			);
+			path = PalringoPhotos;
+			sourceTree = "<group>";
+		};
+		075F3AC21DB0FFE100831312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				075F3AC31DB0FFE100831312 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		075F3ADB1DB0FFE100831312 /* PalringoPhotosTests */ = {
+			isa = PBXGroup;
+			children = (
+				075F3ADC1DB0FFE100831312 /* PalringoPhotosTests.m */,
+				075F3ADE1DB0FFE100831312 /* Info.plist */,
+			);
+			path = PalringoPhotosTests;
+			sourceTree = "<group>";
+		};
+		075F3AE61DB0FFE100831312 /* PalringoPhotosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				075F3AE71DB0FFE100831312 /* PalringoPhotosUITests.m */,
+				075F3AE91DB0FFE100831312 /* Info.plist */,
+			);
+			path = PalringoPhotosUITests;
+			sourceTree = "<group>";
+		};
+		6A19101F24F52AE9009DB969 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				075F3AF61DB1001D00831312 /* PhotoCollectionViewController.swift */,
+				6A19101D24F51CD4009DB969 /* SelectPhotographerViewController.swift */,
+				6A19102024F54277009DB969 /* CommentsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		075F3ABE1DB0FFE100831312 /* PalringoPhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 075F3AEC1DB0FFE100831312 /* Build configuration list for PBXNativeTarget "PalringoPhotos" */;
+			buildPhases = (
+				075F3ABB1DB0FFE100831312 /* Sources */,
+				075F3ABC1DB0FFE100831312 /* Frameworks */,
+				075F3ABD1DB0FFE100831312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PalringoPhotos;
+			productName = PalringoPhotos;
+			productReference = 075F3ABF1DB0FFE100831312 /* PalringoPhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		075F3AD71DB0FFE100831312 /* PalringoPhotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 075F3AEF1DB0FFE100831312 /* Build configuration list for PBXNativeTarget "PalringoPhotosTests" */;
+			buildPhases = (
+				075F3AD41DB0FFE100831312 /* Sources */,
+				075F3AD51DB0FFE100831312 /* Frameworks */,
+				075F3AD61DB0FFE100831312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				075F3ADA1DB0FFE100831312 /* PBXTargetDependency */,
+			);
+			name = PalringoPhotosTests;
+			productName = PalringoPhotosTests;
+			productReference = 075F3AD81DB0FFE100831312 /* PalringoPhotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		075F3AE21DB0FFE100831312 /* PalringoPhotosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 075F3AF21DB0FFE100831312 /* Build configuration list for PBXNativeTarget "PalringoPhotosUITests" */;
+			buildPhases = (
+				075F3ADF1DB0FFE100831312 /* Sources */,
+				075F3AE01DB0FFE100831312 /* Frameworks */,
+				075F3AE11DB0FFE100831312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				075F3AE51DB0FFE100831312 /* PBXTargetDependency */,
+			);
+			name = PalringoPhotosUITests;
+			productName = PalringoPhotosUITests;
+			productReference = 075F3AE31DB0FFE100831312 /* PalringoPhotosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		075F3AB71DB0FFE100831312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = Palringo;
+				TargetAttributes = {
+					075F3ABE1DB0FFE100831312 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = "";
+						ProvisioningStyle = Manual;
+					};
+					075F3AD71DB0FFE100831312 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 075F3ABE1DB0FFE100831312;
+					};
+					075F3AE21DB0FFE100831312 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 075F3ABE1DB0FFE100831312;
+					};
+				};
+			};
+			buildConfigurationList = 075F3ABA1DB0FFE100831312 /* Build configuration list for PBXProject "PalringoPhotos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 075F3AB61DB0FFE100831312;
+			productRefGroup = 075F3AC01DB0FFE100831312 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				075F3ABE1DB0FFE100831312 /* PalringoPhotos */,
+				075F3AD71DB0FFE100831312 /* PalringoPhotosTests */,
+				075F3AE21DB0FFE100831312 /* PalringoPhotosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		075F3ABD1DB0FFE100831312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075F3AD21DB0FFE100831312 /* LaunchScreen.storyboard in Resources */,
+				075F3ACF1DB0FFE100831312 /* Assets.xcassets in Resources */,
+				075F3ACD1DB0FFE100831312 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		075F3AD61DB0FFE100831312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		075F3AE11DB0FFE100831312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		075F3ABB1DB0FFE100831312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F2581D1DB3B5400077EACA /* Photo.swift in Sources */,
+				07F2581F1DB3B66A0077EACA /* PhotoCell.swift in Sources */,
+				6A19102124F54277009DB969 /* CommentsViewController.swift in Sources */,
+				07F258211DB3BA8F0077EACA /* PhotoComment.swift in Sources */,
+				6A19101E24F51CD4009DB969 /* SelectPhotographerViewController.swift in Sources */,
+				075F3AC71DB0FFE100831312 /* AppDelegate.m in Sources */,
+				075F3AF71DB1001D00831312 /* PhotoCollectionViewController.swift in Sources */,
+				B5586B511DB153B800E82C9B /* GradientView.swift in Sources */,
+				B59C06221DB16D3500425848 /* CachedRequest.swift in Sources */,
+				075F3AC41DB0FFE100831312 /* main.m in Sources */,
+				075F3AFB1DB128A400831312 /* FlickrFetcher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		075F3AD41DB0FFE100831312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075F3ADD1DB0FFE100831312 /* PalringoPhotosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		075F3ADF1DB0FFE100831312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075F3AE81DB0FFE100831312 /* PalringoPhotosUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		075F3ADA1DB0FFE100831312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 075F3ABE1DB0FFE100831312 /* PalringoPhotos */;
+			targetProxy = 075F3AD91DB0FFE100831312 /* PBXContainerItemProxy */;
+		};
+		075F3AE51DB0FFE100831312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 075F3ABE1DB0FFE100831312 /* PalringoPhotos */;
+			targetProxy = 075F3AE41DB0FFE100831312 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		075F3ACB1DB0FFE100831312 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				075F3ACC1DB0FFE100831312 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		075F3AD01DB0FFE100831312 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				075F3AD11DB0FFE100831312 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		075F3AEA1DB0FFE100831312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		075F3AEB1DB0FFE100831312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		075F3AED1DB0FFE100831312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PalringoPhotos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palringo.PalringoPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PalringoPhotos/PalringoPhotos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		075F3AEE1DB0FFE100831312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PalringoPhotos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palringo.PalringoPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PalringoPhotos/PalringoPhotos-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		075F3AF01DB0FFE100831312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PalringoPhotosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palringo.PalringoPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PalringoPhotos.app/PalringoPhotos";
+			};
+			name = Debug;
+		};
+		075F3AF11DB0FFE100831312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PalringoPhotosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palringo.PalringoPhotosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PalringoPhotos.app/PalringoPhotos";
+			};
+			name = Release;
+		};
+		075F3AF31DB0FFE100831312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PalringoPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palringo.PalringoPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PalringoPhotos;
+			};
+			name = Debug;
+		};
+		075F3AF41DB0FFE100831312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PalringoPhotosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palringo.PalringoPhotosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PalringoPhotos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		075F3ABA1DB0FFE100831312 /* Build configuration list for PBXProject "PalringoPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075F3AEA1DB0FFE100831312 /* Debug */,
+				075F3AEB1DB0FFE100831312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		075F3AEC1DB0FFE100831312 /* Build configuration list for PBXNativeTarget "PalringoPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075F3AED1DB0FFE100831312 /* Debug */,
+				075F3AEE1DB0FFE100831312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		075F3AEF1DB0FFE100831312 /* Build configuration list for PBXNativeTarget "PalringoPhotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075F3AF01DB0FFE100831312 /* Debug */,
+				075F3AF11DB0FFE100831312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		075F3AF21DB0FFE100831312 /* Build configuration list for PBXNativeTarget "PalringoPhotosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075F3AF31DB0FFE100831312 /* Debug */,
+				075F3AF41DB0FFE100831312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 075F3AB71DB0FFE100831312 /* Project object */;
+}
